@@ -42,8 +42,9 @@
             , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+};
 
-    &pro_micro_i2c {
+&pro_micro_i2c {
     status = "okay";
 
     oled: ssd1306@3c {
@@ -58,5 +59,4 @@
         prechargep = <0x22>;
         inversion-on;
     };
-};
 };
